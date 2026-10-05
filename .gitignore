@@ -25,3 +25,20 @@ venv/
 # Node
 node_modules/
 dist/
+
+# Python
+__pycache__/
+*.py[cod]
+.pytest_cache/
+
+# Virtual environments
+venv/
+.venv/
+
+# Environment variables
+.env
+.env.*
+
+# Node
+node_modules/
+dist/
