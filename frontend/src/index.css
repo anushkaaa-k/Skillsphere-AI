@@ -1,0 +1,99 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+:root {
+  --color-background: #eef7f5;
+  --color-sidebar: #0f3838;
+  --color-sidebar-hover: #174d4d;
+  --color-sidebar-active: #1f5c5c;
+  --color-primary: #d99b00;
+  --color-primary-hover: #b88400;
+  --color-surface: #ffffff;
+  --color-surface-secondary: #f4faf8;
+  --color-input: #e4f2ef;
+  --color-text-primary: #112a2a;
+  --color-text-secondary: #4a6865;
+  --color-border: #cce5e0;
+  --color-success: #0d9488;
+  --color-warning: #d97706;
+  --color-error: #e11d48;
+}
+
+body {
+  background-color: var(--color-background);
+  color: var(--color-text-primary);
+  font-family: 'Inter', sans-serif;
+  margin: 0;
+  padding: 0;
+  min-height: 100vh;
+}
+
+/* Custom scrollbars */
+::-webkit-scrollbar {
+  width: 6px;
+  height: 6px;
+}
+::-webkit-scrollbar-track {
+  background: #eef7f5;
+}
+::-webkit-scrollbar-thumb {
+  background: #b2d8d2;
+  border-radius: 4px;
+}
+::-webkit-scrollbar-thumb:hover {
+  background: #8cb0ad;
+}
+
+.custom-card {
+  background-color: var(--color-surface);
+  border: 1px solid var(--color-border);
+  border-radius: 0.75rem;
+  box-shadow: 0 1px 3px rgba(15, 56, 56, 0.05);
+}
+
+.custom-card-header {
+  padding: 1rem 1.25rem;
+  border-bottom: 1px solid var(--color-border);
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.btn-primary {
+  background-color: var(--color-primary);
+  color: #ffffff;
+  font-weight: 600;
+  padding: 0.5rem 1rem;
+  border-radius: 0.5rem;
+  transition: all 0.2s;
+}
+.btn-primary:hover {
+  background-color: var(--color-primary-hover);
+}
+
+.btn-secondary {
+  background-color: var(--color-surface-secondary);
+  color: var(--color-text-primary);
+  border: 1px solid var(--color-border);
+  font-weight: 500;
+  padding: 0.5rem 1rem;
+  border-radius: 0.5rem;
+  transition: all 0.2s;
+}
+.btn-secondary:hover {
+  background-color: #d8ede8;
+}
+
+.input-field {
+  background-color: var(--color-input);
+  border: 1px solid var(--color-border);
+  color: var(--color-text-primary);
+  border-radius: 0.5rem;
+  padding: 0.5rem 0.75rem;
+  outline: none;
+  transition: border-color 0.2s;
+}
+.input-field:focus {
+  border-color: var(--color-primary);
+}
